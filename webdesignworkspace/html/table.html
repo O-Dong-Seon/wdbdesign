@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table(표) 관련 태그</title>
+</head>
+<body>
+	<!-- table ,tr ,td, th -->
+	<table border="1px">
+		<caption>초롱쌤과 학생들</caption>
+		<thead> <!-- 표의 제목을 구분하는 태그 -->
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>별명</th>
+			</tr>
+		</thead>
+		<tbody><!-- 표의 본문을 구분하는 태그 -->
+		<tr>
+			<td>1</th>
+			<td>동선</th>
+			<td>도비</th>
+		</tr>
+		<tr>
+			<td rowspan="2">2</th>
+			<td colspan="2">아이번</th>
+		</tr>
+		<tr>
+			<td>오동동</td>
+			<td>동동</td>
+		</tr>
+		</tbody>
+		<tfoot> <!-- 표의 요약을 구분하는 태그 -->
+			<tr>
+				<td colspan="3">칭구가 2명이다</td>
+			</tr>
+		</tfoot>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selector(선택자)</title>
+	<style type="text/css">
+	/* [*]전체 선택자: 모든 태그를 선택 */	
+	*{
+		font-size: 45px;
+	}
+	/* [태그] 태그선택자: 해당 태그 전부를 선택 */
+	div{
+		border: 5px solid pink;
+		margin-bottom: 20px;    /* 하단부에 바깥여백*/
+	}
+	/* [#] id선택자: 해당 id 1개를 선택 */
+	#div1{
+		font-weight: bold; /* 글자 진하게 */
+		color: #8181F7; /* 글자 색 */
+	}
+	
+	/* [.] class선택자: 해당 clss복수개 선택 */
+	.point{
+		color: red;
+		font-size:80px;
+		font-weight: bold;
+	}
+	
+	/* [?,?] 그룹 선택자: ,로 엮은 그룹 모두 선택*/	
+	div,span{
+		color: green;
+	}
+	div{
+		color: green;
+	}
+	span{
+		color: green;
+	}
+	
+		div{ color: yellow; }
+		#div1{ color: red;}
+		.div2{ color: blue;}
+	</style>
+</head>
+<body>
+	<div>
+		TO.동선
+		<p>
+			초롱쌤 허쉬우유 좀 그만드세요. <span class = "point">제발</span> 그만 좀 드세요<br>
+			<span class="point">하하하하하핳</span>
+		</p>
+	</div>
+
+	<div id = "div1" > 
+			네 사드릴게요	.
+	</div>
+</body>
+</html>

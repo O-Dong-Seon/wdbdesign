@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation:메뉴 만들기:)</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Sunflower:300&display=swap');
+		body{
+			padding: 0px;
+			margin: 0px;
+			font-family: 'Sunflower', sans-serif;
+		}
+		 ul{
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+
+		}
+		 a{
+			text-decoration: none
+		}
+		.wrap{
+			width: 100%;
+			height: 50px;
+			background-color: pink;
+		}
+		.ulnav > li > a{ /* 자식 선택자: .ulnav 바로다음 하위의 li태그들만 선택 */
+			float: left;
+			color: #df405a;
+			line-height: 50px;
+			padding:0 10px; /* 상하 0 좌우 10px */ /* */
+		}
+		.ulnav > li:hover { /* 웹 요소를 활성화 했을때 스타일 적용*/
+			background-color: #f2e9e1;
+		}
+		.ulnav > li:hover .dropdown{ /* hover 했을시 안에 있는 자식만 적용*/ 
+			display : block;
+		}
+
+		.ulnav > li{
+			position: relative;
+			display: inline-block;
+			height: 50px;
+		}
+
+		.dropdown{
+			position: absolute;
+			top: 50px;
+			left: 0px;
+			width: 100%;
+			display: none;
+		}
+		.dropdown > a{
+			display: block;
+			background-color: #white; 
+			color: #B45F04;
+			font-size: 15px;
+			text-align: center;
+			padding: 3px 0;
+		}
+		.dropdown > a:hover {
+			background-color: #f2e9e1;
+			color: #df405a;  
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">  <!-- wrap은 전체를 감싸줌 -->
+		<ul class="ulnav"> <!-- 자식선택자 태그 아래로 한단계 들어온 모든값은 자식 -->
+			<li><a href="#">Best</a></li>
+			<li><a href="#">New</a></li>
+			<li>
+				<a href="#">아우터</a>
+				<div class="dropdown">
+					<a href = "#">패딩점퍼</a> 
+					<a href = "#">가디건</a> 
+					<a href = "#">야상자켓</a> 
+					<a href = "#">블레이저</a>
+					<a href = "#">코트</a> 
+
+				</div>
+			</li>
+			<li><a href="#">상의</a></li>
+			<li><a href="#">하의</a></li>
+		</ul>
+		<!-- 태그는 모두 상위하위를 가짐 li태그는ul태그의 자식 -->
+		<!-- 시작점을 어디로 정하느냐에 따라 다름 -->
+		<!--  -->
+ 	</div>
+</body>
+</html>
