@@ -1,0 +1,63 @@
+
+	@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+	*{box-sizing: border-box}
+	body{
+		font-family: 'Do Hyeon', sans-serif;
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+		color: #2F3138;
+	}
+	ul{   
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a {
+		color: inherit;  /*앵커 태그에게 부모한테 받은 색상을 알려줌*/
+		text-decoration: none;
+	}
+	.f-color1{ color:#3885CA; }
+	.f-color2{ color#EBA444; }
+	.f-color3{ color: #D1D1DD; }
+	.bg-color1{ background-color: #3885CA; }
+	.bg-color2{ background-color: #EBA444; }
+	.bg-color3{ background-color: #D1D1DD; }
+	/* 버튼들 */
+	button.btn{
+			display: inline-block;
+			font-weight: 600;
+			text-align: center;
+			font-size: 15px;
+			border-radius: 5px;
+			cursor: pointer;
+			padding: 11px 12px;
+			border: 1px solid transparent;
+		}
+		button.btn-basic{  /*로그인 버튼*/
+			border: 1px solid #white;
+			background-color: #white;
+			color: #black;
+		}
+		button.btn-basic:hover{
+			color: #white;
+			border-color: #9999a8;
+			background-color: 
+		}
+		button.btn-primary{ /*회원가입 버튼*/
+			background-color: #86828B;
+			color: white; 
+		}
+		button.btn-primary:hover{
+			background-color: #615e66;
+			border-color: transparent;
+		}
+		button.btn-support{ 
+			background-color: #EBA444;
+			color: white; 
+		}
+		button.btn-support:hover{
+			background-color: #CA8420;
+			border-color: transparent;
+		}
+
