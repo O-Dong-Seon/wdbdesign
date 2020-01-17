@@ -55,7 +55,16 @@
 			background-color: #CACAE2;
 			color: white;
 		}
-		.header_content_nav{background-color: green;}
+		.header_content_nav{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 280px;
+		}
+		.header_content_nav > div{
+			/*border: 1px solid red;*/
+			padding: 10px 0;
+		}
 		.header_content_member{ /* 로그인,회원가입*/
 			/* width: 160px; */
 			display: flex; 
@@ -66,13 +75,13 @@
 		.header_content_member > div{
 			padding: 10px 0px 10px 3px;
 		}
-		.header_content_member_mypage{
+		.header_content_dropdown_group{
 			position: relative;
 		}
-		.header_content_member_first:hover .header_dropdown {
+		.header_content_dropdown_wrap:hover .header_dropdown {
 			display: block;
 		}
-		.header_content_member_mypage > a{
+		.header_content_dropdown_group > a{
 			display: inline-block;
 			padding: 12px 15px;
 			font-weight: 400;
@@ -83,7 +92,7 @@
 			line-height: 19px;
 		}
 
-		.header_content_member_first:hover > div > a,
+		.header_content_dropdown_group:hover > div > a,
 		.header_content_member_cart:hover > a{
 			background-color: rgba(20,23,28,.05);
 			border-color: rgba(20,23,28,.05);
@@ -150,6 +159,11 @@
 			z-index: 99;
 		}
 
+
+
+
+
+		
 	</style>
 </head>
 <body>
@@ -162,6 +176,69 @@
 					<!-- <span class="header_content_logo_text">PlayTime</span> -->
 					</a>
 				</div>
+			
+			<div class="header_content_nav">
+
+				<div class="header_content_dropdown_group"><a href="#" class="magicline">할인</a></div>
+
+				<div class="header_content_dropdown_wrap">
+					<div class="header_content_dropdown_group">
+						<a href="#" class="magicline">인디</a>
+					<div class="header_dropdown">
+							<div class="arrow"></div>
+							<ul class="header_dropdown_menu">
+								<li><a href="#">액션</a></li>
+								<li><a href="#">공포</a></li>
+								<li><a href="#">RPG</a></li>
+								<li><a href="#">기타</a></li>
+						</ul>
+					</div>
+				</div>
+			  </div>
+
+				<div class="header_content_dropdown_wrap">
+					<div class="header_content_dropdown_group">
+						<a href="#" class="magicline">액션</a>
+					<div class="header_dropdown">
+							<div class="arrow"></div>
+							<ul class="header_dropdown_menu">
+								<li><a href="#">스토리</a></li>	
+								<li><a href="#">멀티플레이</a></li>
+								<li><a href="#">전략</a></li>
+						</ul>
+					</div>
+				</div>
+			  </div>
+				
+				<div class="header_content_dropdown_wrap">
+					<div class="header_content_dropdown_group">
+						<a href="#" class="magicline">공포</a>
+					<div class="header_dropdown">
+							<div class="arrow"></div>
+							<ul class="header_dropdown_menu">
+								<li><a href="#">스토리</a></li>
+								<li><a href="#">멀티플레이</a></li>
+								<li><a href="#">퍼즐</a></li>
+						</ul>
+					</div>
+				</div>
+			  </div>
+				
+				<div class="header_content_dropdown_wrap">
+					<div class="header_content_dropdown_group">
+						<a href="#" class="magicline">RPG</a>
+					<div class="header_dropdown">
+							<div class="arrow"></div>
+							<ul class="header_dropdown_menu">
+								<li><a href="#">스토리</a></li>
+								<li><a href="#">멀티플레이</a></li>
+								<li><a href="#">액션</a></li>
+
+						</ul>
+					</div>
+				</div>
+			  </div>
+			</div>
 			<div class="header_content_search">
 				<form name="" action="" method="GET">
 					<div class="header_content_search_group">
@@ -170,26 +247,23 @@
 					</div>
 				</form>				
 			</div>
-			<div class="header_content_nav">
-				<a href="#">액션</a>
-				<a href="#">공포</a>
-				<a href="#">RPG</a>
-			</div>
+
 			<div class="header_content_member">
-				<div class="header_content_member_first">
-					<div class="header_content_member_mypage">
+				<div class="header_content_dropdown_wrap">
+					<div class="header_content_dropdown_group">
 						<a href="#">마이페이지</a>
-						<div class="header_dropdown">
-							<div class="arrow"></div>
-							<ul class="header_dropdown_menu">
-							<li><a href="#">구매내역</a></li>
-							<li><a href="#">회원정보수정</a></li>
-							<li><a href="#">위시리스트</a></li>
-							<li><a href="#">고객센터</a></li>
-						</ul>
+							<div class="header_dropdown">
+								<div class="arrow"></div>
+								<ul class="header_dropdown_menu">
+								<li><a href="#">구매내역</a></li>
+								<li><a href="#">회원정보수정</a></li>
+								<li><a href="#">위시리스트</a></li>
+								<li><a href="#">고객센터</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
+
 				<div>
 					<div class="header_content_member_cart">
 						<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
@@ -200,6 +274,7 @@
 				<div><button type="button" class="btn btn-primary">회원가입</button></div>
 			</div>
 			</div>
+
 		</div>
 	</header>
 </body>
