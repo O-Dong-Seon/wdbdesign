@@ -1,10 +1,35 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8"> <!-- 한글이 안깨지게 해줌 -->
 	<title>pokemon.html:포켓몬스터 카드 도감</title>
 	<link rel="stylesheet" type="text/css" href="../common.css">
 	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+	*{box-sizing: border-box}
+	body{
+		font-family: 'Do Hyeon', sans-serif;
+		margn: 0;
+		padding: 0;
+		font-size: 14px;
+		color: #2F3138;
+	}
+	ul{   
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a {
+		color: inherit;  /*앵커 태그에게 부모한테 받은 색상을 알려줌*/
+		text-decoration: none;
+	}
+	.f-color1{ color:#3885CA; }
+	.f-color2{ color#EBA444; }
+	.f-color3{ color: #D1D1DD; }
+	.bg-color1{ background-color: #3885CA; }
+	.bg-color2{ background-color: #EBA444; }
+	.bg-color3{ background-color: #D1D1DD; }
+		
 		.card{						/*박스 틀*/
 			border: 1px solid rgba(0, 0, 0, 0.3); 
 			width: 250px;				
@@ -87,7 +112,7 @@
 			<div class="name_info">
 				No.001 이상해씨
 			</div>
-			<div class=img_info>
+			<div class="img_info">
 				<img src="../img/grass.png" class="pokemon">
 			</div>
 			<div class="detail_info">
